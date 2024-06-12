@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Financeira</title>
+    <title>Calculadora de Juros Compostso</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="calculadora">
-        <h1>Calculadora Financeira</h1>
+        <h1>Calculadora de Juros Compostos</h1>
         <div class="form-group">
-            <label for="quantiaInicial">Valor Inicial:</label>
+            <label for="quantiaInicial">Valor Inicial</label>
             <input type="number" id="quantiaInicial" required>
         </div>
 
         <div class="form-group">
-            <label for="taxaJuros">Taxa de Juros(% ao ano):</label>
+            <label for="taxaJuros">Taxa de Juros(% ao ano)</label>
             <input type="number" id="taxaJuros" step="0.01" required>
         </div>
 
         <div class="form-group">
-            <label for="anos">Período:</label>
-            <input type="number" id="anos" required>
-            <select id="periodo">
-                <option value="anual">Anos</option>
-                <option value="mensal">Meses</option>
-            </select>
+            <label for="time">Período</label>
+            <input type="number" id="time" required>
+        </div>
+        
+        <div id="result">
+            <h4>resultado</h4>
+            <span id="total">
+                R$ 0,00
+            </span>
         </div>
 
+        <button id="calculate">Calcular</button>
         
-
-        <button onclick="calcularValorFuturo()"> Calcular</button>
-        <div class="resultado" id="resultado"></div>
     </div>
     <script src="script.js"></script>
 </body>
