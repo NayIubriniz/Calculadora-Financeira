@@ -7,10 +7,13 @@ body{
     font-family: 'roboto';
     margin: 0px;
     padding: 0px;
-    background:linear-gradient(to left, #000, #3b3b3b);
+    background: linear-gradient(to right, #292929, #000);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+img{
+    width: 500px;
 }
 h1{
     margin: 0;
@@ -93,4 +96,9 @@ button:hover{
     text-align: center;
     color: green;
     font-weight: bold;
+}
+@media screen and (width < 1000px) {
+    img{
+        display:none;
+    }
 }
